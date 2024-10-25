@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Image Gallery</h1>
+    <div class="filter-buttons">
+        <button data-filter="all">all</button>
+        <button data-filter="giardino">giardino</button>
+        <button data-filter="camera">camera</button>
+        <button data-filter="bagno">bagno</button>
+    </div>
+    
+    <div class="gallery">
+        <div class="image" data-category="giardino">
+            <img src="./img/IMG_9847.JPG">
+        </div>
+        <div class="image" data-category="giardino">
+            <img src="./img/IMG_9878.JPG">
+        </div>
+        <div class="image" data-category="giardino">
+            <img src="./img/IMG_9898.JPG">
+        </div>
+        <div class="image" data-category="camera">
+            <img src="./img/IMG_9815.JPG">
+        </div>
+        <div class="image" data-category="camera">
+            <img src="./img/IMG_9827.JPG">
+        </div>
+        <div class="image" data-category="camera">
+            <img src="./img/IMG_9815.JPG">
+        </div>
+        <div class="image" data-category="bagno">
+            <img src="./img/IMG_9803.JPG">
+        </div>
+        <div class="image" data-category="bagno">
+            <img src="./img/IMG_9805.JPG">
+        </div>
+      
+        </div>
+        <!-- Aggiungi altre immagini con diverse categorie -->
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
